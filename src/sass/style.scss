@@ -1,16 +1,40 @@
-$theme-colors: (
-    "primary": #ff3a52,
-    "dark": #000000
-);
+// $theme-colors: (
+//     "primary-blue": #3F54D1,
+//     "bg": #EFEFEF
+// );
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    // background-color: #EFEFEF;
+    overflow-x: hidden;
+}
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        ul{
+            display: flex;
+            li{
+                margin-left: 50px;
+                &.sign-up{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
 
-@import "node_modules/bootstrap/scss/bootstrap";
-
-body {
-    padding-top:56px;
-}
-.footer {
-    margin-top:3rem;
-}
-.navbar {
-    border-bottom:1px solid #eee;
-}

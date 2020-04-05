@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 body{
-    // background-color: #EFEFEF;
+    background-color: #EFEFEF !important;
     overflow-x: hidden;
 }
 .container{
@@ -18,23 +18,93 @@ body{
 li{
     list-style: none;
 }
-a{
-    text-decoration: none;
-}
 header{
+    padding-top: 20px;
+    height: 100vh;
     nav{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 20px;
         ul{
             display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0;
+            font-size: 20px;
             li{
-                margin-left: 50px;
-                &.sign-up{
-                    margin-left: 10px;
+                a{
+                    text-decoration: none;
+                    color: #6F7171;
+                }
+                a:hover{
+                    color: #3F54D1 !important;
+                }
+                
+                margin-left: 65px;
+            }
+                    .sign-up{
+                        margin-left: 65px;
+                        color: #3F54D1; 
+                        font-size: 20px;
+                        border: none;
+                        background: none;
+                        cursor: pointer;
+                    }
+        }
+    }
+    .left-top_white-sq{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 68.5vw;
+        height: 97vh; //do te kthehem
+        z-index: -1000;
+        background-color: #fff;
+    }
+    .main-header{
+        margin-left: 15%;
+        display: flex;
+        padding-right: 130px;
+        justify-content: space-between;
+        .text-part_header{
+            width: 40%;
+            margin-top: 130px;
+            h1{
+                font-size: 60px;
+            }
+            div{
+                button{
+                    padding: 15px 45px;
+                    color: #fff;
+                    border: none;
+                    cursor: pointer;
+                    margin-top: 20px;
                 }
             }
+            .view-btn{
+                background-color: #3F54D1;
+                margin-right: 20px;
+            }
+            .covid{
+                background-color: #6107C8;
+            }
         }
+        .doctor-bg{
+            margin-top: 35.5px;
+            height: fit-content;
+            width: 35%;
+            border-radius: 200px 0 0 0;
+            margin-left: 80px;
+            border: 3px solid #3F54D1;
+            img{
+                width: 100%;
+                height: auto;
+                border-radius: 200px 0 ;
+                transform: translate(-110px, -51px);
+            }
+        }
+        
     }
 }
 
